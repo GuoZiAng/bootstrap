@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/AdminLTE.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+  </head>
+jason file --> html
+<div class="js-componenta" style="background-color: red;">
+    <p>mustache構文の出力を表示します ： {{ text }}</p>
+    <p>v-textの出力を表示します ： <span>{{text}}</span></p>
+</div>
+<div class="js-componentb">
+<p>{{ text }}</b>
+</div>
+<div class="js-componentc" style="background-color: blue;">
+{{text}}
+</div>
+<div class="js-componentd" style="background-color: gray;">
+{{text}}
+</div><br>
+htnl --> vue
+<div class="js-component05">
+    <p><input v-model="show_text" type="text"></p>
+    <p>ここに入力文字列を表示します ： {{ show_text }}</p>
+</div>
+<hr>
+onclick:
+<div class="vue_onclick_p">
+  <input v-model="vue_onclick_text" type="text" onchange="text_clear(show_content)">
+  <button v-on:click="output">press and will +1</button>
+  <p id="show_content"> {{text}}</p>
+</div>
+<hr>
+遍历：
+<div class="js-component06">
+  <div v-for="(item,index) in divNo" style="background-color: red;margin-top:5px;">
+    {{index}}---{{item}}
+  </div>
+</div>
+<hr>
+adminlte zip /  tar     adminlte.js    .css    bootstrap --> js css
+
+<script src = "javascripts/jquery-3.2.1.min.js"></script>
+<script src = "javascripts/bootstrap.js"></script>
+<script src = "javascripts/adminlte.js"></script>
+<script src = "javascripts/vue.min.js"></script>
+<script src = "javascripts/mesg.js"></script>
+</html>
